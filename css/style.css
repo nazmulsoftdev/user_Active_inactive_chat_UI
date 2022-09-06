@@ -1,0 +1,133 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #485460;
+}
+
+.chatWrapper {
+    width: 300px;
+    height: 400px;
+    border-bottom: 1px inset rebeccapurple;
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+}
+
+.chatBox {
+    width: 100%;
+    height: 100%;
+    background-color: #227093;
+    position: relative;
+}
+
+
+/* chat heading section */
+
+.chatHeader {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e272e;
+    border-bottom: 1px solid #ffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profileImage {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-image: url("../assets/profile.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+    position: relative;
+}
+
+.activeSymbol {
+    width: 10px;
+    height: 10px;
+    background-color: #44bd32;
+    border-radius: 50%;
+    position: absolute;
+    left: 42px;
+}
+
+.chatActive span {
+    font-size: small;
+    color: #ffff;
+}
+
+
+/* chat store section */
+
+.chatStoreWrapper {
+    width: 100%;
+    height: 300px;
+    background-color: #1e272e;
+    position: relative;
+    overflow: scroll;
+}
+
+.chatStoreWrapper p {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    background-color: #227093;
+    color: #ffff;
+}
+
+
+/* Hide scrollbar for Chrome, Safari and Opera  chat store section */
+
+.chatStoreWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+
+/* Hide scrollbar for IE, Edge and Firefox  chat store section*/
+
+.chatStoreWrapper {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+
+/* chat form section */
+
+.chatFormWrapper {
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+
+.chatFormWrapper {
+    display: flex;
+}
+
+.chatFormWrapper input[type="text"] {
+    padding: 10px;
+    width: 90%;
+    border: none;
+    outline: none;
+}
+
+.chatFormWrapper button[type="submit"] {
+    padding: 10px 20px;
+    background-image: url("../assets/sendIcon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    border: none;
+    cursor: pointer;
+}

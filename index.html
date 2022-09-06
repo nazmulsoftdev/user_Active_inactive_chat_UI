@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+    <div class="chatWrapper">
+        <div class="chatBox">
+            <div class="chatHeader">
+                <div class="profileImage">
+                    <div class="activeSymbol"></div>
+                </div>
+                <div class="chatActive">
+                    <span class="activeTitle">Online</span>
+                </div>
+            </div>
+            <div class="chatStoreWrapper"></div>
+            <div class="chatFormWrapper">
+                <input type="text" class="chatData" name="chatData" placeholder="type here" autocomplete="off" required />
+                <button type="submit" class="sendBtn" onclick="sendMessage(this)"></button>
+            </div>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
